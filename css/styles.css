@@ -65,6 +65,7 @@ body{
 	background-color: #333333;
 	height: 100%;
 	width: 100%;
+	background-image: url(../imgs/obscure.png);
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: 10%;
