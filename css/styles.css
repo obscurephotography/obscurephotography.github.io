@@ -130,12 +130,12 @@ right: 20px;
 	font-size: 20pt;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1367px) {
 #who {
 	font-size: 16pt;
 }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1025px) {
 #who {
 	font-size: 12pt;
 }
