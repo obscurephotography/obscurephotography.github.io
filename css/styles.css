@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Kelson Sans RU; 
+    src: local("Kelson Sans RU"), 
+         url(../fonts/KelsonSansRU.otf); 
+  }
+body{
+	overflow: hidden;
+	font-family: Kelson Sans RU; 
+	background-color: #333333;
+	height: 100vh;
+	color: #f3f3f3;
+}
+#back{
+	background-image: url(../imgs/background.jpg);
+	background-size: cover;
+	height: 110vh;
+	width: 110vw;
+	z-index: -1;	
+}
+#backlogo {
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 37%;
+}
+#menu {
+	background-color: rgba(37,37,37, 0.8);
+	position: absolute;
+	margin-top: 90vh;
+	margin-left: 2%;
+	min-width: 96%;
+	z-index: 1000;
+}
+#menulogo{
+	padding-right: 65px;
+	margin-left: -25px;
+}
+#nav {
+	color: #ecf0f1;
+	word-spacing: 10pt;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#nav li{
+	display: inline-table;
+	vertical-align: middle;
+	font-size: 20pt;
+}
+#nav li a{
+	color: #f3f3f3;
+	text-decoration: none;
+	word-spacing: 0;
+}
+#nav li a:hover{
+	color: #6f6f6f;
+}
+#nav li .active{
+	color: gray;
+}
+.info-block{
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background-color: #333333;
+	height: 100%;
+	width: 100%;
+	background-image: url(../imgs/obscure.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 10%;
+	z-index: 500;
+}
+.parallax-viewport {
+    position: relative;     /* relative, absolute, fixed */
+    overflow: hidden;
+}
+.parallax-layer {
+    position: absolute;
+}
+
+
+.horizon-prev, .horizon-next {
+position: fixed;
+top: 50%;
+margin-top: -24px;
+z-index: 9999;
+}
+.horizon-prev {
+left: 20px;
+}
+.horizon-next {
+right: 20px;
+}
+
+.portphoto
+{
+	width: 100vw;
+}
+
+.Pos-Container.is-Table { display: table; }
+.is-Table .Table-Cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.is-Table .Center-Block {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center
+}
+#contacts {
+	margin-left: -30px;
+}
+#contacts li{
+	display: inline-table;
+	vertical-align: middle;
+	background-color: black;
+	font-size: 20pt;
+	padding: 10px 15px 10px 15px; 
+	margin-left: -10px;
+}
+#contacts li:hover{
+	background-color: white;
+}
+#cont a{
+	color: gray;
+	text-decoration: none;
+}
+#who {
+	font-size: 20pt;
+}
+
+@media screen and (max-width: 800px) {
+#who {
+	font-size: 16pt;
+}
+}
+@media screen and (max-width: 640px) {
+#who {
+	font-size: 12pt;
+}
+}

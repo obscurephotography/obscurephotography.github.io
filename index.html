@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  	<meta charset="utf-8">
+  	<title>Obscure Photography</title>
+  	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="body1" class="parallax-viewport">
+
+	<div class="parallax-layer" id="back"></div>
+
+	<div id="port" class="info-block">
+		<div class="horizon-prev"><img src="imgs/arrows/l-arrow.png"></div>
+		<div class="horizon-next"><img src="imgs/arrows/r-arrow.png"></div>
+
+		<img id="portf1" class="portphoto" alt="photo1" src="imgs/portfolio/1.jpg">
+		<img id="portf2" class="portphoto" alt="photo2" src="imgs/portfolio/2.jpg">
+		<img id="portf3" class="portphoto" alt="photo3" src="imgs/portfolio/3.jpg">
+		<img id="portf4" class="portphoto" alt="photo4" src="imgs/portfolio/4.jpg">
+		<img id="portf5" class="portphoto" alt="photo5" src="imgs/portfolio/5.jpg">
+		<img id="portf6" class="portphoto" alt="photo6" src="imgs/portfolio/6.jpg">
+		<img id="portf7" class="portphoto" alt="photo7" src="imgs/portfolio/7.jpg">
+		<img id="portf8" class="portphoto" alt="photo8" src="imgs/portfolio/8.jpg">
+		<img id="portf9" class="portphoto" alt="photo9" src="imgs/portfolio/9.jpg">
+	</div>
+
+	<div id="who" class="info-block Pos-Container is-Table">
+	  <div class="Table-Cell">
+	    <div id="cb" class="Center-Block"> 
+	    	<img src="imgs/myphoto.png" width="200" alt="myphoto">   	
+			<p>Меня зовут Саша и фотография - это половина меня. Родился и вырос в Донецке, где живу и по сей день. Преимущественно работаю в жанре портретной фотографии, хотя иногда снимаю и репортажи.</p>
+			<p>Obscure - мой проект, ведь скучные и шаблонные 'Name Surname Photographer' так надоели.</p>
+	    </div>
+	  </div>
+	</div>
+
+	<div id="cont" class="info-block Pos-Container is-Table">
+	  <div class="Table-Cell">
+	    <div class="Center-Block">
+			<ul id="contacts">
+				<li><a href="https://vk.com/id145595712" target="_blank">ВКонтакте</a></li>
+				<li><a href="mailto:luckygamm@gmail.com">Письмо</a></li>
+			</ul>
+			<p> web design & development: <a href="http://perevoznik.name/" target="_blank">ILYA PEREVOZNIK</a></p>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="parallax-layer" id="backlogo">
+		<img alt="logo" src="imgs/obscure.png">
+	</div>
+
+	<div id="menu">
+		<ul type="none" id="nav">
+			<li><img id="menulogo" alt="logo" src="imgs/logo.png" height="60"></li>
+			<li><a id="menu_home" class="active" href="#" title="хоум">хоум</a></li>
+			<li><a id="menu_port" href="#" title="портфолио">портфолио</a></li>
+			<li><a id="menu_who" href="#" title="кто я">кто я</a></li>
+			<li><a id="menu_cont" href="#" title="связь">связь</a></li>	
+		</ul>
+	</div>
+
+	<!-- SCRIPTS -->
+	<script src="js/jquery.js"></script>
+	<script src="js/queryloader2.min.js"></script>
+	<script>
+	    window.addEventListener('DOMContentLoaded', function() {
+	        new QueryLoader2(document.querySelector("body"), {
+	            barColor: "#f3f3f3",
+	            backgroundColor: "#333",
+	            percentage: true,
+	            barHeight: 4,
+	            minimumTime: 200,
+	            fadeOutTime: 1000
+	        });
+	    });
+	</script>
+	<script src="js/jquery.parallax.js"></script>
+	<script src="js/menu.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+		 	$('.parallax-layer').parallax({mouseport: $('#body1')}, {xparallax: '0.5', yparallax: '0.5'}, {xparallax: '0.05',yparallax: '0.05'});   
+  		});
+	</script>
+	<script src="js/portfolio.js"></script>
+</body>
+
+</html>
