@@ -16,8 +16,8 @@ $(document).ready(function() {
     i++;
 
     if (i <= maxi) {
-        if (i > 1) { $("#portf"+(i-1)).fadeOut(750); }
         $("#portf"+i).fadeIn(750);
+        if (i > 1) { $("#portf"+(i-1)).fadeOut(750); }
     }
        
     if (i == maxi) { $(".horizon-next").hide(); } else { $(".horizon-next").show(); }
