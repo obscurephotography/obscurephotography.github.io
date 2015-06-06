@@ -1,5 +1,5 @@
 ﻿var i;
-var maxi = 9;
+var maxi = 1;
 var vis_port = false;
 
 $(document).ready(function() { 
