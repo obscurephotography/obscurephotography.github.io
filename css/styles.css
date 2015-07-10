@@ -88,9 +88,11 @@ z-index: 9999;
 }
 .horizon-prev {
 left: 20px;
+cursor: hand;
 }
 .horizon-next {
 right: 20px;
+cursor: hand;
 }
 
 .portphoto
